@@ -15,7 +15,7 @@ It includes Wind tiles (namely East, South, West, North, denoted by `[1-4]z`) an
 |---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |Circles|p|![1p](Resources/MJt1.png)|![2p](Resources/MJt2.png)|![3p](Resources/MJt3.png)|![4p](Resources/MJt4.png)|![5p](Resources/MJt5.png)|![6p](Resources/MJt6.png)|![7p](Resources/MJt7.png)|![8p](Resources/MJt8.png)|![9p](Resources/MJt9.png)|
 |Bamboo|s|![1s](Resources/MJs1.png)|![2s](Resources/MJs2.png)|![3s](Resources/MJs3.png)|![4s](Resources/MJs4.png)|![5s](Resources/MJs5.png)|![6s](Resources/MJs6.png)|![7s](Resources/MJs7.png)|![8s](Resources/MJs8.png)|![9s](Resources/MJs9.png)|
-|Characters|w|![1m](Resources/MJw1.png)|![2m](Resources/MJw2.png)|![3m](Resources/MJw3.png)|![4m](Resources/MJw4.png)|![5m](Resources/MJw5.png)|![6m](Resources/MJw6.png)|![7m](Resources/MJw7.png)|![8m](Resources/MJw8.png)|![9m](Resources/MJw9.png)|
+|Characters|m|![1m](Resources/MJw1.png)|![2m](Resources/MJw2.png)|![3m](Resources/MJw3.png)|![4m](Resources/MJw4.png)|![5m](Resources/MJw5.png)|![6m](Resources/MJw6.png)|![7m](Resources/MJw7.png)|![8m](Resources/MJw8.png)|![9m](Resources/MJw9.png)|
 
 ### Honor tiles
 

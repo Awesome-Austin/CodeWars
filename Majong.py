@@ -1,37 +1,45 @@
 #! python3
 
+import operator
+from random import shuffle
+
+
 class Hand:
     def __init__(self, tiles):
-        self._suits = {'simple': [9, 'psm'], 'honor': [7, 'z']}
-        self._all_tiles = {
-            suit: [i+1 for i in range(n) for j in range(4)] for n, suits in self._suits.values() for suit in suits
+        self._suits = {
+            **{c: {'type': 'simple', 'count': 9, 'sort': i} for i, c in enumerate('psm')},
+            **{c: {'type': 'honor', 'count': 7, 'sort': 3} for c in 'z'}
         }
+        self._tile_options = [(n+1, s) for s, s_info in self._suits.items()
+                              for n in range(s_info['count']) for i in range(4)]
+        self.tiles = [(int(n), suit) for n, suit in tiles.split(' ')]
+        for tile in self.tiles:
+            self._tile_options.remove(tile)
 
-        self.tiles = dict()
-        for n, suit in tiles.split(' '):
-            n = int(n)
-            self.tiles.setdefault(suit, list())
-            self.tiles[suit].append(n)
-            self._all_tiles[suit].remove(n)
+        self.winning_tiles = list()
 
-    def _tiles_string(self, tiles):
-        return ''.join((f'{n}{s}' for s, ns in tiles.items() for n in ns))
+        # print([x[0] for x in sorted(self._suits.items()[0], key=lambda x: x[1]['sort'])])
 
     def __repr__(self):
-        l = list()
-        for
-
-
-
-        return repr([(n, s) for s, ns in self.tiles.items() for n in ns])
+        return repr(self._sort_tiles(self.tiles.copy()))
 
     def __str__(self):
-        return self._tiles_string(self.tiles)
+        return self._tiles_2_string(self.tiles.copy())
 
+    def _sort_tiles(self, tiles):
+        shuffle(tiles)
+        sorted_tiles = [t for t, so
+                        in sorted([(t, self._suits[t[1]]['sort']) for t in tiles], key=operator.itemgetter(1, 0))]
+        return sorted_tiles
+
+    def _tiles_2_string(self, tiles):
+        return ' '.join([f'{n}{s}' for n, s in self._sort_tiles(tiles)])
+
+    # def check
 
 if __name__ == '__main__':
     tiles = "2p 2p 3p 3p 4p 4p 5p 5p 7m 7m 8m 8m 8m"
     hand = Hand(tiles)
     # print(hand.tiles)
     # print(hand._all_tiles)
-    print(repr(hand))
+    print(str(hand))

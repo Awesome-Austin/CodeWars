@@ -102,3 +102,6 @@ Input tiles are space-separated.
      5p => (2p 3p 4p) (2p 3p 4p) (5p 5p 5p) (7m 7m) (8m 8m 8m),
      7m => (2p 2p) (3p 4p 5p) (3p 4p 5p) (7m 7m 7m) (8m 8m 8m),
      8m => (2p 2p) (3p 3p) (4p 4p) (5p 5p) (7m 7m) (8m 8m) (8m 8m) )
+     
+# Reference
+Taken from [CodeWars](https://www.codewars.com/kata/56a36b618e2548ddb400004d/train/python)

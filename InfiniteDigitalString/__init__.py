@@ -1,0 +1,1 @@
+from InfiniteDigitalString.main import find_position

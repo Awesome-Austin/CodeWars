@@ -1,0 +1,1 @@
+from BefungeInterpreter.main import interpret

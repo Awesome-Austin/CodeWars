@@ -2,7 +2,7 @@
 
 ## Instructions
 
-As [breadcrumb menùs](https://en.wikipedia.org/wiki/Breadcrumb_%28navigation%29) are quite popular today,
+As [breadcrumb menus](https://en.wikipedia.org/wiki/Breadcrumb_%28navigation%29) are quite popular today,
 I won't digress much on explaining them, leaving the wiki link to do all the dirty work in my place.
 
 What might not be so trivial is instead to get a decent breadcrumb from your current url.

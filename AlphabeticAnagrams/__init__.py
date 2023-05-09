@@ -1,0 +1,1 @@
+from AlphabeticAnagrams.main import listPosition
